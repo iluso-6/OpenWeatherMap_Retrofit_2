@@ -5,9 +5,9 @@
 <table>
 		<th colspan="3">Sign in and Menu Activities</th>
   <tr>
-    <td><img src="https://github.com/iluso-6/NCI_Final_Project/blob/master/screenshots/image039.png?raw=true" align="left"/></td>
+    <td><img src="https://github.com/iluso-6/OpenWeatherMap_Retrofit_2/blob/master/screenshots/one.png?raw=true" align="left"/></td>
     <td width="33%"></td>
-    <td> <img src="https://github.com/iluso-6/NCI_Final_Project/blob/master/screenshots/image040.png?raw=true" align="right"/>
+    <td> <img src="https://github.com/iluso-6/OpenWeatherMap_Retrofit_2/blob/master/screenshots/two.png?raw=true" align="right"/>
     </td>
 
 <br><br>
@@ -19,9 +19,9 @@
 <table>
 		<th colspan="3">Sign in and Menu Activities</th>
   <tr>
-    <td><img src="https://github.com/iluso-6/NCI_Final_Project/blob/master/screenshots/image039.png?raw=true" align="left"/></td>
+    <td><img src="https://github.com/iluso-6/OpenWeatherMap_Retrofit_2/blob/master/screenshots/three.png?raw=true" align="left"/></td>
     <td width="33%"></td>
-    <td> <img src="https://github.com/iluso-6/NCI_Final_Project/blob/master/screenshots/image040.png?raw=true" align="right"/>
+    <td> <img src="https://github.com/iluso-6/OpenWeatherMap_Retrofit_2/blob/master/screenshots/four.png?raw=true" align="right"/>
     </td>
 
 <br><br>
