@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Splash">
+
+
+    <TextView
+        android:id="@+id/textViewSplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_marginBottom="10dp"
+        android:text="@string/getting_your_location"
+        android:textAlignment="center"
+        android:textColor="@color/darker_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/refresh_bg"
+        android:scaleType="fitCenter"
+        android:src="@drawable/location_btn_selector"
+        android:text="Refresh"
+        android:visibility="invisible" />
+
+</RelativeLayout>

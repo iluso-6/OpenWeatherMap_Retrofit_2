@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="shay.example.com.openweatherretrofit2.WeatherActivity">
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_card_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        app:cardBackgroundColor="@color/off_white"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+<LinearLayout
+    android:id="@+id/vertLin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    app:srcCompat="@drawable/temperature" />
+
+                <TextView
+                    android:id="@+id/textViewTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/weather_text" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/tempHighLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:gravity="start|center_horizontal"
+                android:textAlignment="gravity"
+                android:textSize="@dimen/text_sm"
+                android:textStyle="italic" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    app:srcCompat="@drawable/windspeed" />
+
+                <TextView
+                    android:id="@+id/textViewWind"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/weather_text" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/compassImg"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    app:srcCompat="@drawable/compass" />
+
+                <TextView
+                    android:id="@+id/textViewWindDir"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/weather_text" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    app:srcCompat="@drawable/humidity" />
+
+                <TextView
+                    android:id="@+id/textViewHumidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/weather_text" />
+            </TableRow>
+
+        </TableLayout>
+                <View
+                    android:id="@+id/line_across"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="#c0c0c0"
+                    android:padding="0dp" />
+
+    <TextView
+        android:id="@+id/textViewSunUpDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="up"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_sun" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cream"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginStart="50dp"
+            android:layout_weight="1"
+            android:foregroundGravity="right"
+            android:layoutDirection="inherit"
+            android:scaleType="fitEnd"
+            android:src="@android:drawable/list_selector_background" />
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="Info"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/weather_text" />
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/thumb_map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/main_card_final">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:transitionName="@string/transition_string"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/magnifyer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/expand"
+        android:visibility="gone" />
+</FrameLayout>
+</RelativeLayout>

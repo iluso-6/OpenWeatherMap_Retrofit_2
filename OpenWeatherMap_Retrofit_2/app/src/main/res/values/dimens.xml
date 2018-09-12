@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_text">14sp</dimen>
+    <dimen name="text_sm">8sp</dimen>
+    <dimen name="text_sun">12sp</dimen>
+    <dimen name="icon_size">28dp</dimen>
+</resources>
