@@ -2,6 +2,8 @@
 
 ***Android application excercise to learn and implement the Retrofit 2 library***
 
+Sign up with https://openweathermap.org/ to get an API key and edit the res/values/google_maps_api.xml before launching
+
 <table>
 		<th colspan="3">Dún Laoghaire and Malaga with cloud overlay</th>
   <tr>
